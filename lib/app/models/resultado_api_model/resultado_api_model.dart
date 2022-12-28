@@ -1,4 +1,7 @@
-import '../../zip_model/zip_model.dart';
+import 'dart:convert';
+
+import '../request_app/request_app_model.dart';
+import '../zip_model/zip_model.dart';
 
 class ResultadoApiModel {
   String codRet, msGret;
@@ -13,6 +16,12 @@ class ResultadoApiModel {
 
     return ResultadoApiModel(
         codRet: json["codret"], msGret: json["msgret"], pathFileCacheTemporary: pathFileImage);
+  }
+
+  static Future<ResultadoApiModel> makeRequest(String palavraChave) async {
+    const String url = "http://mtb.no-ip.org:5190/mtb/v0100/api/RetornaPopUpTeste/";
+    var jsonResponse = jsonDecode((await RequestAppModel.makeGet(url: "$url$palavraChave")).body);
+    return await ResultadoApiModel.fromJson(jsonResponse["mtb"]);
   }
 }
 

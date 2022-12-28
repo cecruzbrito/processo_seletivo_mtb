@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:processo_seletivo_mtb/app/models/make_request_api/models/resultado_api_model.dart';
+import 'package:processo_seletivo_mtb/app/models/resultado_api_model/resultado_api_model.dart';
 import 'package:processo_seletivo_mtb/app/pages/home_page/controller/home_ctr.dart';
 
 import 'pop_up_home/pop_up_bem_sucedido.dart';

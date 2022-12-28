@@ -28,8 +28,3 @@ Pequeno em Flutter realizado para a segunda etapa do processo seletivo, seguindo
     - mobx: ^2.1.3
     - path_provider: ^2.0.11
 ---  
-
-<div class="mermaid">
-sequenceDiagram
-A->> B: Query
-</div>

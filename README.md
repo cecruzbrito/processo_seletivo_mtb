@@ -29,6 +29,7 @@ Pequeno em Flutter realizado para a segunda etapa do processo seletivo, seguindo
     - path_provider: ^2.0.11
 ---  
 ## Diagrama de classes
+  O projeto foi construido baseando-se no modelo MVC, devido sua baixa complexidade. Com uma organização em pastas dos widgets usados em cada pagina
 
 ```mermaid
 classDiagram

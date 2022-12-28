@@ -28,8 +28,35 @@ Pequeno em Flutter realizado para a segunda etapa do processo seletivo, seguindo
     - mobx: ^2.1.3
     - path_provider: ^2.0.11
 ---  
+## Diagrama de classes
 
-<div class="mermaid">
-sequenceDiagram
-A->> B: Query
-</div>
+```mermaid
+classDiagram
+  class CredenciaisAppModel
+  CredenciaisAppModel: -_usuario
+  CredenciaisAppModel: -_password
+  CredenciaisAppModel: +credenciais
+  
+  class FileModel
+  FileModel: +createFileBytes(bytes, nameWithExtension, isTemporary) File
+  
+  class ResultadoApiModel
+  ResultadoApiModel: +codRet
+  ResultadoApiModel: +msGret
+  ResultadoApiModel: +pathFileCacheTemporary
+  ResultadoApiModel: +fromJson(json) ResultadoApiModel
+  ResultadoApiModel: +makeRequest(palavraChave) ResultadoApiModel
+  
+  class RequestAppModel
+  RequestAppModel: +makeGet(url, headers)
+  
+  class ZipModel
+  ZipModel: +decode(base64Enconde)
+  ZipModel: +createFileData(archive, indexArchive) 
+  
+  ResultadoApiModel ..> RequestAppModel
+  RequestAppModel ..> CredenciaisAppModel
+  ResultadoApiModel ..> ZipModel
+  ResultadoApiModel ..> FileModel
+  
+```

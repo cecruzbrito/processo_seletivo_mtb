@@ -58,5 +58,6 @@ classDiagram
   RequestAppModel ..> CredenciaisAppModel
   ResultadoApiModel ..> ZipModel
   ResultadoApiModel ..> FileModel
+  ZipModel ..> FileModel
   
 ```

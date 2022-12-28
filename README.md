@@ -16,7 +16,7 @@
 </p>
 
 # Processo Seletivo MTB
-Pequeno projeto desenvolvido utilizando a framework Flutter, realizado para a segunda etapa do processo seletivo da MTB, seguindo todas as diretrizes repassadas.
+Pequeno projeto mobile desenvolvido utilizando a framework Flutter, realizado para a segunda etapa do processo seletivo da MTB, seguindo todas as diretrizes repassadas.
 
 ---
 ## Pacotes utilizados

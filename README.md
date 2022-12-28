@@ -1,16 +1,35 @@
-# processo_seletivo_mtb
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/darlosss/processo_seletivo_mtb?color=a015f5">
 
-A new Flutter project.
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/darlosss/processo_seletivo_mtb">
+  
+  <img alt="Application Status" src="https://img.shields.io/badge/Status-running-b6fe03">
 
-## Getting Started
+  <a href="https://github.com/darlosss/repime/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/darlosss/processo_seletivo_mtb">
+  </a>
+  
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  <a href="https://github.com/darlosss/repimestargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/darlosss/processo_seletivo_mtb?style=social">
+  </a>
+</p>
 
-This project is a starting point for a Flutter application.
+# Processo Seletivo MTB
+Pequeno em Flutter realizado para a segunda etapa do processo seletivo, seguindo todas as diretrizes repassadas.
 
-A few resources to get you started if this is your first Flutter project:
+---
+## Pacotes utilizados
+---  
+    -> Flutter
+    - archive: ^3.3.5
+    - flutter_mobx: ^2.0.6+5
+    - http: ^0.13.5
+    - mobx: ^2.1.3
+    - path_provider: ^2.0.11
+---  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div class="mermaid">
+sequenceDiagram
+A->> B: Query
+</div>

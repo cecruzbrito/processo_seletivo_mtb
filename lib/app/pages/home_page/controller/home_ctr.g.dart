@@ -33,6 +33,54 @@ mixin _$HomeCtr on _HomeCtrBase, Store {
     });
   }
 
+  late final _$isShowPopUpAtom =
+      Atom(name: '_HomeCtrBase.isShowPopUp', context: context);
+
+  @override
+  bool get isShowPopUp {
+    _$isShowPopUpAtom.reportRead();
+    return super.isShowPopUp;
+  }
+
+  @override
+  set isShowPopUp(bool value) {
+    _$isShowPopUpAtom.reportWrite(value, super.isShowPopUp, () {
+      super.isShowPopUp = value;
+    });
+  }
+
+  late final _$resultadoApiAtom =
+      Atom(name: '_HomeCtrBase.resultadoApi', context: context);
+
+  @override
+  ResultadoApiModel? get resultadoApi {
+    _$resultadoApiAtom.reportRead();
+    return super.resultadoApi;
+  }
+
+  @override
+  set resultadoApi(ResultadoApiModel? value) {
+    _$resultadoApiAtom.reportWrite(value, super.resultadoApi, () {
+      super.resultadoApi = value;
+    });
+  }
+
+  late final _$tipoPopUpAtom =
+      Atom(name: '_HomeCtrBase.tipoPopUp', context: context);
+
+  @override
+  EnumResultadoApiTipos get tipoPopUp {
+    _$tipoPopUpAtom.reportRead();
+    return super.tipoPopUp;
+  }
+
+  @override
+  set tipoPopUp(EnumResultadoApiTipos value) {
+    _$tipoPopUpAtom.reportWrite(value, super.tipoPopUp, () {
+      super.tipoPopUp = value;
+    });
+  }
+
   late final _$onTapInButtonAsyncAction =
       AsyncAction('_HomeCtrBase.onTapInButton', context: context);
 
@@ -64,9 +112,56 @@ mixin _$HomeCtr on _HomeCtrBase, Store {
   }
 
   @override
+  void _setIsShowPopUp(bool value) {
+    final _$actionInfo = _$_HomeCtrBaseActionController.startAction(
+        name: '_HomeCtrBase._setIsShowPopUp');
+    try {
+      return super._setIsShowPopUp(value);
+    } finally {
+      _$_HomeCtrBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void closePopUp() {
+    final _$actionInfo = _$_HomeCtrBaseActionController.startAction(
+        name: '_HomeCtrBase.closePopUp');
+    try {
+      return super.closePopUp();
+    } finally {
+      _$_HomeCtrBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void _setResultadoApi(ResultadoApiModel value) {
+    final _$actionInfo = _$_HomeCtrBaseActionController.startAction(
+        name: '_HomeCtrBase._setResultadoApi');
+    try {
+      return super._setResultadoApi(value);
+    } finally {
+      _$_HomeCtrBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
+  void _setTipoPopUp(EnumResultadoApiTipos value) {
+    final _$actionInfo = _$_HomeCtrBaseActionController.startAction(
+        name: '_HomeCtrBase._setTipoPopUp');
+    try {
+      return super._setTipoPopUp(value);
+    } finally {
+      _$_HomeCtrBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
+  @override
   String toString() {
     return '''
 isLoading: ${isLoading},
+isShowPopUp: ${isShowPopUp},
+resultadoApi: ${resultadoApi},
+tipoPopUp: ${tipoPopUp},
 isEnableButton: ${isEnableButton}
     ''';
   }

@@ -8,6 +8,6 @@ class MakeRequestApiModel {
 
   static Future<ResultadoApiModel> makeRequest(String palavraChave) async {
     var jsonResponse = jsonDecode((await RequestAppModel.makeGet(url: "$_url$palavraChave")).body);
-    return ResultadoApiModel.fromJson(jsonResponse[0]["mtb"]);
+    return await ResultadoApiModel.fromJson(jsonResponse["mtb"]);
   }
 }
